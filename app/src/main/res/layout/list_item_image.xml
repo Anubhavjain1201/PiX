@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+            <variable
+                name="image"
+                type="com.example.pix.gallery.Image" />
+    </data>
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:padding="3dp"
+            app:img="@{image.uri}"
+            tools:src="@tools:sample/backgrounds/scenic" />
+</layout>
